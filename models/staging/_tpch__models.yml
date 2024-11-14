@@ -268,13 +268,3 @@ models:
       - name: s_comment
         data_type: varchar
         description: ""
-  - name: stg_tpch__lineitem
-    description: ""
-    columns:
-      - name: l_orderkey
-        data_type: number
-        description: ""
-        tests:
-          - relationships:
-              to: ref('stg_tpch__orders')
-              field: o_orderkey
