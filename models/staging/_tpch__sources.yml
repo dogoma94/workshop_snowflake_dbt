@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: tpch
-    database: "{{ env_var ('DBT_ENVIRONMENT') }}_DEV_BRONZE_DB"
+    database: "{{ env_var ('DBT_ENVIRONMENT') }}_BRONZE_DB"
     schema: TPCH
   
     tables:
