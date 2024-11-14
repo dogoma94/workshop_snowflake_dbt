@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: tpch
-    database: DEV_BRONZE_DB
-    schema: TPC
+    database: "{{ env_var ('DBT_ENVIRONMENT') }}_DEV_BRONZE_DB"
+    schema: TPCH
   
     tables:
       - name: customer
