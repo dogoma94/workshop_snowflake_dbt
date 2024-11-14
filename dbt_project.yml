@@ -37,11 +37,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_new_project:
     marts:
-      +database: "{{ env_var ('DBT_ENVIRONMENT') }}_DEV_GOLD_DB"
+      +database: "{{ env_var ('DBT_ENVIRONMENT') }}_GOLD_DB"
       +schema: "VENTAS"
       +materialized: table
 
     staging:
-      +database: "{{ env_var ('DBT_ENVIRONMENT') }}_DEV_SILVER_DB"
+      +database: "{{ env_var ('DBT_ENVIRONMENT') }}_SILVER_DB"
       +schema: "VENTAS"
       +materialized: table
